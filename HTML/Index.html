@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first website</title>
+        <link rel="icon" type="image/jpg" href="Favicon.jpg">
+    </head>
+    <body>
+        <header>
+        <h1> This is an h1 heading</h1>
+        </header>
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <h4>This is an h4 heading</h4>
+        <h5>This is an h5 heading</h5>
+        <br>
+        <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw"
+        target="_blank"
+        title="Goes to youtube">
+            Click me
+
+        </a>
+        <br>
+        <br>
+
+       <a href="lyrics.html">
+        Song lyrics
+       </a>
+       <br>
+       <br>
+       <a href="mailto:test@fake.com">
+        email me
+       </a> 
+       <br>
+       <br>
+
+       <a href="https://en.wikipedia.org/wiki/Cat">
+        <img src="Images/Cat.jpg"
+       alt="This is a picture of a cat"
+       height="200" width="200">
+       </a>
+       <br>
+       <br>
+       <img src="Images/Cat.gif.mp4"
+       alt="This a gif of a cat"
+       height=""200>
+       <br>
+       <br>
+       <p>Meowing sound</p>
+       <audio controls autoplay muted loop>
+        <source src="mixkit-sweet-kitty-meow-93.wav">
+
+       </audio>
+       <br>
+       <br>
+       <a href="https://en.wikipedia.org/wiki/Cat"
+       target="_blank">
+       <video src="istockphoto-1491266403-640_adpp_is.mp4" controls
+       height="500" width="500">
+       </video>
+       </a>
+
+       </video>
+
+        <hr>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur similique laudantium dignissimos error, illo quaerat ratione, est rem eum animi ut voluptatem molestiae maiores unde aperiam molestias provident eius?
+        </p>
+        <pre>
+            Lorem ipsum dolor sit amet,
+             consectetur adipisicing elit.
+              Nihil cumque officia,
+               a dicta odio aspernatur adipisci
+                numquam blanditiis ipsum voluptatibus
+                , accusamus illum.
+                 Autem quam quis dolore consectetur rem,
+                  eos ex?
+        </pre>
+        <!-- THIS IS A COMMENT-->
+         <p>This is a normal text</p>
+         <p>This is a <b>bold</b> text</p>
+         <p>This is a <i>italic</i> text</p>
+         <p>This is a <u>underlined</u> text</p>
+         <p>This is a <del>delete</del> text</p>
+         <p>This is a <big>big</big> text</p>
+         <p>This is a <sub>subscript</sub> text</p>
+         <p>This is a <small>small</small> text</p>
+         <p>This is a <sup>superscript</sup> text</p>
+         <p>This is a <tt>monospaced</tt> text</p>
+         <p>This is a <mark>mark</mark> text</p>
+
+         <!--span selects a particular inline sentence-->
+         <h1><span>This is a span text</span></h1>
+         <!-- div selects the entire block of the sentence-->
+         <h2><div>This is a div text</div></h2>
+
+         <!--Unordered List-->
+         <h4>Groceries</h4><ul>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>coffee supplies</li>
+            <ul>
+                <li>coffee beans</li>
+                <li>creamer</li>
+                <li>sugar</li>
+            </ul>
+         </ul>
+
+         <!-- Ordered List-->
+          <h4>To-Do-List</h4>
+          <ol>
+            <li>eat breakfast</li>
+            <li>bathe</li>
+            <li>go to work</li>
+            <li>sleep</li>
+          </ol>
+
+          <!--Description Lists-->
+          <h4>Mythical creatures</h4>
+          <dl>
+            <dt>dragon</dt>
+            <dd>Mythical</dd>
+            <dt>vampire</dt>
+            <dd>Bite</dd>
+            <dt>werewolf</dt>
+            <dd>Moon</dd>
+          </dl>
+
+          <!--Table-->
+          <h3>Store hours</h3>
+          <table border ="2" style="background-color:pink">
+            <tr align="centre" >
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr align="centre">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+          </table>
+          <br>
+          <br>
+
+          <!-- Button-->
+           <a href="lyrics.html">
+
+           
+           <button style="font-size:25px;background-color:grey;border-radius:25px">Click me</button>
+           </a>
+           <br>
+           <br>
+           <!--Form-->
+           <form action="index.php" methods="POST" enctype="multitype/form-data">
+
+            <label for="username">username:</label>
+            <input type="text" id="username" minlength="6" maxlength="10" placeholder="SpongeBob" required>
+            <br>
+            <label for="password">password:</label>
+            <input type="password" id="password" minlength="6" maxlength="10" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Squarepants@gmail.com">
+            <br>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+            <label for="bday">Birthdate</label>
+            <input type='date' id="bday">
+            <br>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="0" max="7" >
+            <br>
+            <label for="title">Title</label>
+            <br>
+
+            <label for="Mr.">Mr.:</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <br>
+            <label for="Ms.">Ms.:</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+            <br>
+            <label for="PhD.">PhD.:</label>
+            <input type="radio" id="PhD." value="PhD." name="title">
+            <br>
+            <label for="payment">Payment</label>
+            <br>
+            <select id="payment">
+                <option value="visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="giftcard">giftcard</option>
+
+            </select>
+            <br>
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id="subscribe">
+            <br>
+            <label for="comment">Comment</label>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+            <br>
+            <lable for="file">File</lable>
+            <input type="file" id="file" accept="image/png, image.jpeg">
+
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
+
+           </form>
+           <footer>
+            <hr>
+            author: Siya Agrawal
+            <br>
+            &copy; copyright reserved
+            <br>
+           <small> <a href="mailto: Fake@gmail.com">Fake@gmail.com</a></small>
+
+           </footer>
+
+         
+
+
+    </body>
+</html>

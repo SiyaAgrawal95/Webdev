@@ -1,0 +1,222 @@
+body{
+    background-color:grey;
+    border: 3px solid;
+    display: flow-root;
+    
+    /*
+    background-image:url(Favicon.jpg);
+  background-image: url(if small image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;*/
+
+
+}
+h1{
+    color:white;
+    font-family: arial;
+    border-style: solid;
+    border-width:3px;
+    border-color:purple;
+    border-radius:4px;
+    text-shadow: 3px 3px 5px pink,-3px -3px 5px blue ;
+
+}
+
+#p2{
+    color:orange;
+    font-family:"lucida console";
+    font-size:13px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+#p4{
+    color:green;
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+.odd{
+    color:red;
+    border-bottom: 3px solid yellow;
+    border-top: 3px groove pink;
+    border-left: 3px ridge orange;
+    border-right: 3px dotted black;
+}
+#box1{
+    width:100px;
+    height:100px;
+    background-color: rgb(234,234,234);
+    box-shadow: 3px 3px 5px;
+}
+.box{
+    border: 3px solid;
+    font-size:1em;
+    height:50px;
+    width:50px;
+}
+#box2{
+    background-color:violet;
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-left:20px;
+    padding:25px;
+    position:relative;
+    /*left:10px;
+    top:-100px;*/
+    
+
+
+}
+#box3{
+    background-color:purple;
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-left:20px;
+    padding:25px;
+}
+#img1{
+    float:right;
+    margin-right:10px;
+}
+#img2{
+    float:left;
+    margin-left:10px;
+
+}
+.div{
+    border:2px solid;
+    height:50px;
+    width:200px;
+    overflow:scroll;
+
+}
+.dis{
+    background-color:red;
+    width:100px;
+    height:100px;
+    display:inline-block;
+    /*block,inline,none*/
+    
+}
+span{
+    background-color:blue;
+    width:100px;
+    height:100px;
+    display:inline-block;
+}
+#container{
+    border:2px solid;
+
+}
+#container + p{
+    background-color:yellow;
+}
+/*Pseudo-classes*/
+a:link{
+    color:rgb(0, 200, 255);
+
+}
+a:hover{
+    color:blue;
+    font-size:1.1em;
+}
+a:active{
+    font-size:1.1em;
+    color:pink;
+}
+a:visited{
+    color:black;
+}
+li:hover{
+    background-color:yellow;
+}
+li:not(:hover){
+    background-color:grey;
+}
+li:nth-child(3n){
+    background-color:white;
+}
+#greeting p{
+    background-color:blueviolet;
+    padding:10px;
+    display:none;
+}
+#greeting:hover p{
+    display:block
+}
+/*Pseudo elements*/
+
+h2::first-letter{
+    font-size:2em;
+    font-style:italic;
+}
+p::first-line{
+    background-color:yellow;
+}
+p::selection{
+    color:white;
+    background-color:pink;
+}
+#fruits li::before{
+    content:"💓";
+}
+#Apple::after{
+    content:"🍎";
+}#fruits li::marker{
+    content:"✅";
+}
+/*Pagination*/
+
+.pagination{
+    text-align:center;
+}
+.pagination a{
+    color:black;
+    text-decoration:none;
+    padding: 8px 15px;
+    display:inline-block;
+}
+.pagination a.active{
+    background-color:green;
+    font-weight:bold;
+    border-radius:5px;
+}
+.pagination a:hover:not(.active){
+    background-color:rgb(89, 155, 89);
+    border-radius:5px;
+}
+.dropdown{
+    display:inline-block;
+}
+
+.dropdown button{
+    background-color:white;
+    color:blue;
+    padding:10px 15px;
+    border:none;
+    cursor:pointer;
+}
+.dropdown a{
+    display:block;
+    color:black;
+    text-decoration:none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display:none;
+    position:absolute;
+    background-color:rgba(168, 32, 32, 0.785);
+    min-width:100px;
+    box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .content{
+    display:block;
+}
+.dropdown:hover button{
+    background-color:black
+}
+.dropdown a:hover{
+    background-color:brown;
+}
