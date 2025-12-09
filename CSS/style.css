@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color:grey;
     border: 3px solid;
     display: flow-root;
@@ -9,7 +9,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;*/
+  background-size: cover;
 
 
 }
@@ -21,6 +21,7 @@ h1{
     border-color:purple;
     border-radius:4px;
     text-shadow: 3px 3px 5px pink,-3px -3px 5px blue ;
+   
 
 }
 
@@ -64,10 +65,8 @@ h1{
     padding:25px;
     position:relative;
     /*left:10px;
-    top:-100px;*/
+    top:-100px;
     
-
-
 }
 #box3{
     background-color:purple;
@@ -97,7 +96,7 @@ h1{
     width:100px;
     height:100px;
     display:inline-block;
-    /*block,inline,none*/
+    /*block,inline,none
     
 }
 span{
@@ -113,7 +112,7 @@ span{
 #container + p{
     background-color:yellow;
 }
-/*Pseudo-classes*/
+/*Pseudo-classes
 a:link{
     color:rgb(0, 200, 255);
 
@@ -146,7 +145,7 @@ li:nth-child(3n){
 #greeting:hover p{
     display:block
 }
-/*Pseudo elements*/
+/*Pseudo elements
 
 h2::first-letter{
     font-size:2em;
@@ -167,7 +166,7 @@ p::selection{
 }#fruits li::marker{
     content:"✅";
 }
-/*Pagination*/
+/*Pagination
 
 .pagination{
     text-align:center;
@@ -220,3 +219,273 @@ p::selection{
 .dropdown a:hover{
     background-color:brown;
 }
+
+
+/*Navigation bar
+body{
+    margin: 0px;
+}
+main{
+    margin-left:20px;
+    margin-right:20px;
+}
+h1{
+     text-align: center;
+}
+.navbar ul{
+    list-style-type:none;
+    background-color:darkslategrey;
+    padding: 0px;
+    margins: 0px;
+    overflow:hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color:lightblue;
+
+}
+.navbar li{
+    float:left;
+}
+
+/*Website layout
+*{
+    box-sizing: border-box; 
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: rgb(29, 84, 85);
+    text-align: center;
+    padding: 25px;
+}
+
+.Navbar{
+    background-color:black;
+    height: 50px;
+}
+
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+Footer{
+    display: block;
+    clear: both;
+    background-color: rgb(29, 84, 85);
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px){
+    aside,section,article;{
+        width: 100%;
+    }
+}
+
+/*icons
+.icons a{
+    text-decoration: none;
+    margin-right:20px;
+}
+.icons{
+    text-align: center;
+}
+
+.fa-solid.fa-house.fa-2xl{
+    color: purple;
+}
+
+.fa-solid.fa-house.fa-2xl:hover{
+    color: rgb(103, 71, 103);
+}
+.fa-brands.fa-twitter.fa-2xl{
+    color:darkblue;
+}
+
+.fa-brands.fa-twitter.fa-2xl:hover{
+    color:rgb(80, 80, 136);
+}
+
+
+.fa-brands.fa-youtube.fa-2xl{
+    color:red;
+}
+
+.fa-brands.fa-youtube.fa-2xl:hover{
+    color:rgb(139, 90, 90);
+}
+.Flexbox{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /*flex-direction:column-reverse;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.BOX{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius:15px;
+}
+
+#BOX1{
+    background-color: rgb(198, 85, 85);
+    align-self: start;
+    order: -1;
+}
+
+#BOX2{
+    background-color: rgb(225, 225, 92);
+    order: 1;
+}
+
+#BOX3{
+    background-color:rgb(122, 197, 122);
+}
+
+#BOX4{
+    background-color: rgb(88, 204, 214);
+}
+#BOX5{
+    background-color: rgb(198, 85, 85);
+}
+
+#BOX6{
+    background-color: rgb(225, 225, 92);
+}
+
+#BOX7{
+    background-color:rgb(122, 197, 122);
+}
+
+#BOX8{
+    background-color: rgb(88, 204, 214);
+}
+.Trans{
+      width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    transform: translateX(100px) rotateZ(45deg) scale(0.5);
+}
+#Trans1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color:rgba(17, 187, 57, 0.956);
+
+    /*transform: translate(50%,50%);
+    transform: rotateZ(45deg);
+    transform: scale(2,1);
+    transform: skew(45deg,135deg);
+    transform: translateX(100%) rotateZ(90deg) scale(0.5);
+}
+
+#Trans2{
+    background-color: rgb(196, 55, 55);
+}
+
+#Trans3{
+    background-color: rgb(95, 55, 196);
+}
+
+#Anime1{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(202, 98, 98);
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-direction: reverse;
+    animation-play-state: running;
+    animation-timing-function: steps(5);
+}
+
+/*#Anime1:active{
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(100%)}
+}
+
+@keyframes slideRight{
+    to{transform: translateX(100%)}
+}
+
+@keyframes slideUp{
+    from{transform: translateY(100%)}
+}
+
+@keyframes slideDown{
+    to{transform: translateY(100%)}
+}
+
+@keyframes rotate{
+    50%{transform: rotateZ(360deg)}
+}
+
+@keyframes grow{
+    50%{transform: scale(2,2)}
+}
+
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5)}
+}
+
+@keyframes fade{
+    50%{opacity: 0}
+}
+
+@keyframes fadeIn{
+    100%{opacity: 1}
+}
+
+@keyframes colorChange{
+    0%{background-color: rgb(202, 98, 98);}
+    20%{background-color: rgb(234, 227, 90);}
+    40%{background-color: rgb(98, 110, 202);}
+    60%{background-color: rgb(98, 202, 107);}
+    80%{background-color: rgb(202, 98, 155);}
+    100%{background-color: rgb(98, 202, 198);}
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px red}
+}*/
