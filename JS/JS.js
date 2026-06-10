@@ -386,59 +386,116 @@
 
 // 1. document.getElementById()        // ELEMENT OR NULL
 
-const myHeading = document.getElementById("my-heading");
-myHeading.style.backgroundColor = "Yellow";
-myHeading.style.textAlign = "center";
+// const myHeading = document.getElementById("my-heading");
+// myHeading.style.backgroundColor = "Yellow";
+// myHeading.style.textAlign = "center";
 
-console.log(myHeading);
+// console.log(myHeading);
 
 // 2. document.getElementsClassName()  // HTML COLLECTION
 
 
-const fruits = document.getElementsByClassName("fruits");
-fruits[1].style.backgroundColor = "yellow";
+// const fruits = document.getElementsByClassName("fruits");
+// fruits[1].style.backgroundColor = "yellow";
 
- for(let fruit of fruits){
-     fruit.style.backgroundColor = "yellow";
-}
+//  for(let fruit of fruits){
+//      fruit.style.backgroundColor = "yellow";
+// }
 
-Array.from(fruits).forEach(fruit => {
-    fruit.style.backgroundColor = "yellow";
-});
+// Array.from(fruits).forEach(fruit => {
+//     fruit.style.backgroundColor = "yellow";
+// });
 
 // 3. document.getElementsByTagName()  // HTML COLLECTION
 
-const h4Elements = document.getElementsByTagName("h4");
-const liElements = document.getElementsByTagName("li");
+// const h4Elements = document.getElementsByTagName("h4");
+// const liElements = document.getElementsByTagName("li");
 
-h4Elements[1].style.backgroundColor = "yellow";
+// h4Elements[1].style.backgroundColor = "yellow";
 
-for(let h4Element of h4Elements){
-    h4Element.style.backgroundColor = "yellow";
-}
+// for(let h4Element of h4Elements){
+//     h4Element.style.backgroundColor = "yellow";
+// }
 
-for(let liElement of liElements){
-    liElement.style.backgroundColor = "lightgreen";
-}
+// for(let liElement of liElements){
+//     liElement.style.backgroundColor = "lightgreen";
+// }
 
-Array.from(h4Elements).forEach(h4Element => {
-    h4Element.style.backgroundColor = "yellow";
-});
+// Array.from(h4Elements).forEach(h4Element => {
+//     h4Element.style.backgroundColor = "yellow";
+// });
 
-Array.from(liElements).forEach(liElement => {
-    liElement.style.backgroundColor = "lightgreen";
-});
+// Array.from(liElements).forEach(liElement => {
+//     liElement.style.backgroundColor = "lightgreen";
+// });
 // 4. document.querySelector()         // ELEMENT OR NULL
 
-const element = document.querySelector("ul");
+// const element = document.querySelector("ul");
 
-element.style.backgroundColor = "yellow";
+// element.style.backgroundColor = "yellow";
 
 // 5. document.querySelectorAll()      // NODELIST
 
-const foods = document.querySelectorAll("li");
+// const foods = document.querySelectorAll("li");
 
-foods.forEach(food => {
-    food.style.backgroundColor = "yellow";
-});
+// foods.forEach(food => {
+//     food.style.backgroundColor = "yellow";
+// });
 
+//Add and Change HTML Elements
+
+//Example 1 <h1> 
+
+//STEP 1 CREATE THE ELEMENT
+// const newH1 = document.createElement("h1");
+
+//STEP 2 ADD ATTRIBUTES//PROPERTIES
+
+// newH1.textContent = "I like Pizza";
+// newH1.id = "myH1";
+// newH1.style.color = "tomato";
+
+//STEP 3 APPEND ELEMENT TO DOM
+
+//document.body.append(newH1);
+//document.body.prepend(newH1);
+// document.getElementById("box1").append(newH1);
+
+// const box2 = document.getElementById("box2");
+// document.body.insertBefore(newH1,box2);
+
+//IF the elements dont have a class
+// const boxes = document.querySelectorAll(".box");
+// document.body.insertBefore(newH1,boxes[1]);
+
+//REMOVE HTML ELEMENT
+
+//document.body.removeChild(newH1);
+// document.getElementById("box1").removeChild(newH1);
+
+// ---------- EXAMPLE 3 <li> ----------
+
+// STEP 1 CREATE THE ELEMENT
+const newListItem = document.createElement("li");
+
+// STEP 2 ADD ATTRIBUTES/PROPERTIES
+newListItem.textContent = "coconut";
+newListItem.id = "coconut";
+newListItem.style.fontWeight = "bold";
+newListItem.style.backgroundColor = "lightgreen";
+
+// STEP 3 APPEND ELEMENT TO DOM
+//document.body.append(newListItem);
+//document.body.prepend(newListItem);
+//document.getElementById("fruits").append(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
+
+// const orange = document.getElementById("orange");
+// document.getElementById("fruits").insertBefore(newListItem, orange);
+
+// const listItems = document.querySelectorAll("#fruits li");
+// document.getElementById("fruits").insertBefore(newListItem, listItems[0]);
+
+// REMOVE HTML ELEMENT
+// document.body.removeChild(newListItem);
+// document.getElementById("fruits").removeChild(newListItem);
