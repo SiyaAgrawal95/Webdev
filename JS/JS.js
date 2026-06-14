@@ -379,7 +379,7 @@
 
 // welcomeMsg.textContent += username === "" ? `Guest` : username;
 
-// element selectors = Methods used to target and manipulate HTML elements
+// ELEMENT SELECTORS  = Methods used to target and manipulate HTML elements
 //                     They allow you to select one or multiple HTML elements
 //                     from the DOM (Document Object Model)
 
@@ -441,6 +441,68 @@
 // foods.forEach(food => {
 //     food.style.backgroundColor = "yellow";
 // });
+
+// DOM Navigation = The process of navigating through the structure
+//                of an HTML document using JavaScript.
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+// const element = document.getElementById("desserts");
+// const firstChild = element.firstElementChild;
+// firstChild.style.backgroundColor = "yellow";
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+
+//     const firstChild = ulElement.firstElementChild;
+//     firstChild.style.backgroundColor = "yellow";
+
+// });
+
+// const element = document.getElementById("desserts");
+// const lastChild = element.lastElementChild;
+// lastChild.style.backgroundColor = "yellow";
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+
+//     const lastChild = ulElement.lastElementChild;
+//     lastChild.style.backgroundColor = "yellow";
+
+// });
+
+// const element = document.getElementById("fruits");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "yellow";
+
+// const element = document.getElementById("vegetables");
+// const previousSibling = element.previousElementSibling;
+// previousSibling.style.backgroundColor = "yellow";
+
+// const element = document.getElementById("carrots");
+// const parent = element.parentElement;
+// parent.style.backgroundColor = "yellow";
+
+// const element = document.getElementById("desserts");
+// const children = element.children;
+
+// Array.from(children).forEach(child => {
+
+//     child.style.backgroundColor = "yellow";
+
+// });
+
+const element = document.getElementById("desserts");
+const children = element.children;
+
+children[1].style.backgroundColor = "yellow";
 
 //Add and Change HTML Elements
 
