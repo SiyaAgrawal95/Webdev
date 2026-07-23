@@ -1,0 +1,18 @@
+function Button(){
+
+
+//    const styles = {
+//   backgroundColor: "hsl(200, 100%, 50%)",
+//   color: "white",
+//   padding : "10px ,20px",
+//   borderRadius: "5px",
+//   border: "none",
+//   cursor: "pointer",
+// }
+    return(<button className="button">Click Me</button>); EXTERNAL 
+    ///return(<button {Styles.button}>Click Me</button>); MODULES
+    ///return (<button style = {styles}>Click Me</button>);INLINE
+
+}
+
+export default Button
