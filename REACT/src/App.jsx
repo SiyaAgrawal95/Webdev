@@ -4,6 +4,8 @@ import Food from './My_Components/Food.jsx'
 import Card from './My_Components/Card.jsx'
 import Button from './My_Components/Button.jsx'
 import Student from './My_Components/Student.jsx'
+import UserGreetings from './My_Components/UserGreetings.jsx'
+
 
 // props = read-only properties that are shared between components.
 //         A parent component can send data to a child component.
@@ -22,6 +24,7 @@ function App() {
     <Student name="Ajay" age={50} isStudents = {false}></Student>
     <Student name="Saloni" age={26} isStudent = {true}></Student>
     <Student></Student>
+    <UserGreetings isLoggedIn={true} username ="Siya"></UserGreetings>
     </>
   );
 }
