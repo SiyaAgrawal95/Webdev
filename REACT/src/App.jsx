@@ -6,6 +6,8 @@ import Button from './My_Components/Button.jsx'
 import Student from './My_Components/Student.jsx'
 import UserGreetings from './My_Components/UserGreetings.jsx'
 import List from './My_Components/List.jsx'
+import Click from './My_Components/Click.jsx'
+import ProfilePic from './My_Components/ProfilePic.jsx'
 
 
 // props = read-only properties that are shared between components.
@@ -40,6 +42,8 @@ function App() {
     <UserGreetings isLoggedIn={true} username ="Siya"></UserGreetings>
     { fruits.length >0 ? <List items={fruits} category="Fruits"></List> : null}
     {vegetables.length>0 && <List items={vegetables} category="Vegetables"></List> }
+    <Click></Click>
+    <ProfilePic></ProfilePic>
     </>
   );
 }
