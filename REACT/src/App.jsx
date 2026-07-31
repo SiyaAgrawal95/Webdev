@@ -8,7 +8,7 @@ import UserGreetings from './My_Components/UserGreetings.jsx'
 import List from './My_Components/List.jsx'
 import Click from './My_Components/Click.jsx'
 import ProfilePic from './My_Components/ProfilePic.jsx'
-
+import Hooks from './My_Components/Hooks.jsx'
 
 // props = read-only properties that are shared between components.
 //         A parent component can send data to a child component.
@@ -44,6 +44,7 @@ function App() {
     {vegetables.length>0 && <List items={vegetables} category="Vegetables"></List> }
     <Click></Click>
     <ProfilePic></ProfilePic>
+    <Hooks></Hooks>
     </>
   );
 }
