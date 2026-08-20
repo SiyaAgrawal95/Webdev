@@ -10,6 +10,8 @@ import Click from './My_Components/Click.jsx'
 import ProfilePic from './My_Components/ProfilePic.jsx'
 import Hooks from './My_Components/Hooks.jsx'
 import Onchange from './My_Components/Onchange.jsx'
+import ColorPicker from './My_Components/ColorPicker.jsx';
+import Counter from './My_Components/Counter.jsx'
 
 // props = read-only properties that are shared between components.
 //         A parent component can send data to a child component.
@@ -47,6 +49,8 @@ function App() {
     <ProfilePic></ProfilePic>
     <Hooks></Hooks>
     <Onchange></Onchange>
+    <ColorPicker></ColorPicker>
+    <Counter></Counter>
     </>
   );
 }
